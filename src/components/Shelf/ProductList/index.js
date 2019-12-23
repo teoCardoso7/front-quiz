@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Product from './Product';
+import './style.css';
 
 const ProductList = ({ products }) => {
   return products.map(p => {

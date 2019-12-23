@@ -1,0 +1,28 @@
+.shelf-item-img-container{
+    position: relative;
+
+}
+.shelf-item-img-container:hover .primary-img{
+   display: none;
+    z-index: 6;
+    position: relative;
+
+}
+.shelf-item-img-container:hover .secondary-img{
+    display: block;
+     z-index: 6;
+     position: relative;
+ 
+ }
+
+.shelf-item__thumb {
+    z-index: 2;
+}
+
+.secondary-img{
+  display: none;
+  z-index: 5;
+}
+   
+  
+  

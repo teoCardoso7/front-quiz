@@ -36,11 +36,18 @@ const Product = ({ product, addProduct }) => {
       {product.isFreeShipping && (
         <div className="shelf-stopper">Envío gratis</div>
       )}
+      <div class="shelf-item-img-container">
       <Thumb
-        classes="shelf-item__thumb"
+        classes="shelf-item__thumb primary-img"
         src={require(`../../../../static/products/${product.sku}_1.jpg`)}
         alt={product.title}
       />
+        <Thumb
+        classes="shelf-item__thumb secondary-img"
+        src={require(`../../../../static/products/${product.sku}_2.jpg`)}
+        alt={product.title}
+      />
+      </div>
       <p className="shelf-item__title">{product.title}</p>
       <div className="shelf-item__price">
         <div className="val">

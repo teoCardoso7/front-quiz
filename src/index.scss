@@ -65,6 +65,7 @@ main {
     .float-cart {
       width: 100%;
       right: -100%;
+      z-index: 100;
 
       &--open {
         right: 0;
@@ -128,3 +129,4 @@ main {
     }
   }
 }
+
