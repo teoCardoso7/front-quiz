@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+  a{
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+
+    }
+.header{
+    width: 100%;
+    color: white;
+    height: 50px;
+    background: white;
+    padding: 0 1.5rem;
+    display: flex;
+    box-shadow: inset 0 -1px #ccc;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    .header-content{
+        display: flex;
+        align-items: center;
+        .logo-container{
+            img{
+                height: 50px;
+            }
+
+        }
+        .main-menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .menu-item{
+                margin-right: 20px;
+                &:hover{
+                    .menu-item-content{
+                        color: #ff264b;
+                      
+                    }
+                    .holder{
+                        .submenu{
+                            display: block;
+                            flex-flow: column;
+                            align-items: center;
+                            align-content: space-between;
+                        
+
+                        }
+                    }
+
+                }
+              
+                .menu-item-content{
+                    color: #1b1a20;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bold;
+                  
+                }
+                .holder{
+                    position: relative;
+                    display: block;
+                 .submenu{
+                    position: absolute;
+                    
+                    display: none;
+                    background: white;  
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    padding: 10px;
+                    min-height: 100px;
+                    top: 5px;
+                        .submenu-item{
+                            margin: 10px auto;
+                            .submenu-item-content{
+                                color: #1b1a20;
+                                font-family: 'Roboto', sans-serif;
+                               
+                                
+        
+                            }
+                        }
+                     }
+                }
+
+
+                  
+                
+                
+            }
+
+
+        }
+        .search{
+            color: black;
+            position: fixed;
+            right:20px;
+
+        }
+    }
+
+}
